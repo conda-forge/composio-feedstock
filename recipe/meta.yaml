@@ -1,5 +1,5 @@
 {% set name = "composio" %}
-{% set version = "0.8.11" %}
+{% set version = "0.8.12" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/composio-{{ version }}.tar.gz
-  sha256: b364008e791fedc45dd15f644f5792a67fb2426574910394c400c0736dbb6331
+  sha256: fc6500d774ca8775b610a62e207eddec8ba5a98f460c65a046b470d03fde1caa
 
 build:
   noarch: python
