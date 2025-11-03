@@ -1,5 +1,5 @@
 {% set name = "composio" %}
-{% set version = "0.9.0" %}
+{% set version = "0.9.1" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/composio-{{ version }}.tar.gz
-  sha256: b07ef5d96f66cc128d36bdf7d4f5216b7c56cd76abb5d11962cff867482e0855
+  sha256: 90ae01431620c60abed9efdd7f87cbe702937e3840fd38b7621d212fec0a5903
 
 build:
   noarch: python
@@ -24,7 +24,7 @@ requirements:
     - python >={{ python_min }},<4.0
     - pysher >=1.0.8
     - pydantic >=2.6.4
-    - composio-client >=1.10.0
+    - composio-client >=1.11.0
     - typing_extensions >=4.0.0
     - openai
 
