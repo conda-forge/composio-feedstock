@@ -1,5 +1,5 @@
 {% set name = "composio" %}
-{% set version = "0.20.0" %}
+{% set version = "0.21.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/composio-{{ version }}.tar.gz
-  sha256: a0799f54a4807bfdb04e1c0703aac7e70f10e2c0189695581c955a981de99c8e
+  sha256: 334fbcc2358467a2eed7e04133fdd9080cf63007e53caffa50555023724e956a
 
 build:
   noarch: python
@@ -21,6 +21,8 @@ requirements:
     - pip
     - setuptools
   run:
+    - requests >=2.32.2
+    - urllib3 >=2
     - jsonschema >=4.23.0
     - json-schema-to-pydantic >=0.4.11
     - python >={{ python_min }},<4.0
