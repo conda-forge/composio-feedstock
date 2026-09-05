@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: composio
-  version: "0.21.0"
+  version: "0.21.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/${{ name[0] }}/${{ name }}/composio-${{ version }}.tar.gz
-  sha256: 334fbcc2358467a2eed7e04133fdd9080cf63007e53caffa50555023724e956a
+  sha256: 73b327abcc13f49a43a1302bcf426a9e072a872afb3eea2905b0c85bc3bb1f9d
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
